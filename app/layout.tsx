@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 
 export const metadata: Metadata = {
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     icon: "/images/logos/D_of_Detroit.png",
     apple: "/images/logos/D_of_Detroit.png",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
